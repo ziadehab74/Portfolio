@@ -2,14 +2,12 @@ import { useState } from "react";
 import "./header.css";
 
 const Header = () => {
-const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false)
   return (
     <header className="flex">
-      <button  onClick={()=>{
+      <button onClick={() => {
         setShowModal(true)
-      }} className="menu">
-        showModal
-      </button>
+      }} className="menu icon-menu" />
       <div />
       <nav>
         <ul className="flex">
@@ -31,16 +29,18 @@ const [showModal, setShowModal] = useState(false)
           </li>
         </ul>
       </nav>
-
-      <button>
-        light
+      <button className="mode ">
+        <span className="icon-moon-o" />
       </button>
+
       {showModal && (
         <div className="border fixed">
-          <ul className="modal border">
-            <li>  <button onClick={()=>{
-            setShowModal(false)
-           }}>close</button></li>
+          <ul className="modal">
+            <li>
+              <button className="icon-cancel" onClick={() => {
+                setShowModal(false)
+              }} />
+            </li>
             <li><a href="">About</a></li>
             <li><a href="">Articles</a></li>
             <li><a href="">Projects</a></li>

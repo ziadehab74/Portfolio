@@ -1,3 +1,5 @@
+/* nav */
+
 header.flex {
     justify-content: space-between;
     padding: 0 2.4rem;
@@ -42,31 +44,44 @@ header button.menu {
     display: none;
 }
 
-@media(max-width:700px) {
-    header.flex nav {
-        display: none;
-    }
-
-    header button.menu {
-        display: block;
-    }
-}
-
 header .fixed {
     position: fixed;
     inset: 0;
     z-index: 6;
     background-color: rgba(40, 40, 48, 0.91);
+    backdrop-filter: blur(4px);
 }
-@keyframes mymove{
-    0%{scale: 0;}
-    60%{scale: 1.2;}
-    100%{scale: 1;}
 
+
+/* responsive */
+
+@keyframes mymove {
+    0% {
+        scale: 0;
+    }
+    60% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
 }
+
+@media(max-width:700px) {
+    header.flex nav {
+        display: none;
+    }
+    header button.menu {
+        display: block;
+    }
+}
+
+
+/* modal */
+
 header .fixed ul.modal {
-    animation: mymove 0.7s 1 ;
-    width: 85%;
+    animation: mymove 0.7s 1;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
@@ -86,8 +101,43 @@ header .fixed ul.modal li:last-child {
 }
 
 header .fixed ul.modal li:first-child {
+    margin-bottom: -1rem;
     border-bottom: none;
     text-align: right;
     padding-bottom: 0;
     padding-top: 0.2rem;
+}
+
+
+/* Icons */
+
+header .icon-menu,
+header .mode {
+    background-color: var(--bgHeader);
+    height: 2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--subtitle);
+    border: 1px solid rgba(244, 165, 96, 0.249);
+    transition: 0.2s;
+}
+
+header .icon-menu:hover,
+header button .mode:hover {
+    color: var(--title);
+    border: 1px solid rgb(244, 165, 96);
+}
+
+header .icon-cancel {
+    font-size: 1.5rem;
+    color: var(--subtitle);
+    transition: 0.3;
+}
+
+header .icon-cancel:hover {
+    font-size: 1.6rem;
+    color: crimson;
+    rotate: 180deg;
 }
