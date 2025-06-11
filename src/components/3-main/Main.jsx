@@ -9,7 +9,7 @@ const myProjects = [
     subtitle: "It is a project that aims to automate and govern electronic payment in the Cairo Public Transport Authority.",
     category: "laravel",
     associatedWith: ["ACME SAICO"],
-    image: "/public/cta.jpg",
+    image: "/cta.jpg",
     link: "https://www.youm7.com/story/2024/5/18/%D9%86%D9%82%D9%8A%D8%A8-%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%84%D9%8A%D9%86-%D8%A8%D8%A7%D9%84%D9%86%D9%82%D9%84-%D8%A7%D9%84%D8%B9%D8%A7%D9%85-%D9%81%D9%89-%D8%AD%D9%88%D8%A7%D8%B1-%D9%84%D9%80-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9-%D8%A8%D8%AF%D8%A1/6577036",
   },
   {
@@ -18,7 +18,7 @@ const myProjects = [
     subtitle: "It is a project that aims to govern electronic payment in the Alexandria Public Transport Authority.",
     category: "laravel",
     associatedWith: ["ACME SAICO"],
-    image: "/public/apta.jpg",
+    image: "/apta.jpg",
     link: "https://www.youm7.com/story/2017/11/20/%D8%B5%D9%88%D8%B1-%D9%86%D9%82%D9%84%D8%A9-%D9%86%D9%88%D8%B9%D9%8A%D8%A9-%D9%81%D9%89-%D9%85%D8%B1%D9%81%D9%82-%D8%A7%D9%84%D9%86%D9%82%D9%84-%D8%A8%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%AA%D8%B0%D8%A7%D9%83%D8%B1/3517542",
   },
   // { id: 3, title: "Landing Page", category: "css" },
@@ -28,7 +28,7 @@ const myProjects = [
     title: "Egyption Silos",
     subtitle: "It is a project that aims to mechanize Egyptian wheat silos and govern local and imported wheat across the country.",
     associatedWith: ["ACME SAICO", "IBM"],
-    image: "/public/silos.jpg",
+    image: "/silos.jpg",
     link: "https://almalnews.com/1089530/%D8%A7%D9%84%D8%AA%D9%85%D9%88%D9%8A%D9%86-%D8%AA%D8%B7%D8%A8%D9%82-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%8A%D9%83%D9%86%D8%A9-%D8%B5%D9%88%D8%A7%D9%85%D8%B9-%D8%A7%D9%84%D9%82%D9%85/"
   },
 ];
