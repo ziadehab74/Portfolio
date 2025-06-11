@@ -34,7 +34,14 @@ section.hero h1.title {
     color: var(--title);
 }
 
-section.hero .sub-title {
+section.hero h2.sub-title {
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    line-height: 1.65rem;
+    /* margin-bottom: 32px; */
+}
+
+section.hero .content {
     color: var(--subtitle);
     font-size: 0.9rem;
     line-height: 1.65rem;
@@ -42,14 +49,19 @@ section.hero .sub-title {
 }
 
 section.hero .all-icons {
-    font-size: 1.2rem;
+    display: flex;
     gap: 1.5rem;
-    color: var(--subtitle);
 }
 
-section.hero .all-icons .icon:hover {
-    font-size: 1.3rem;
-    transition: 0.3s;
-    cursor: pointer;
-    color: var(--icon-hover);
+section.hero .all-icons a {
+    font-size: 1.2rem;
+    color: var(--subtitle);
+    transition: color 0.3s, font-size 0.3s;
 }
+
+section.hero .all-icons a:hover {
+    font-size: 1.3rem;
+    color: var(--icon-hover);
+    cursor: pointer;
+}
+

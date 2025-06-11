@@ -1,26 +1,38 @@
 import './hero.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+
 export default function Hero() {
   return (
-    <section className='hero flex'>
+    <section id="hero" className='hero flex'>
       <div className='left-section '>
         <div className="parent-avater flex">
           <img className="avater" src="/public/ziad.png" alt="" />
           <div className='icon-verified'></div>
         </div>
         <h1 className='title'>
-          Software designer, founder, and amateur astronaut.
+          Hi, I’m Ziad 👋
         </h1>
-        <p className='sub-title'>
-          I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.
-        </p> 
+        <h2 className='sub-title'>
+          Full Stack Software Engineer
+        </h2>
+        <p className='content'>
+          I build scalable web applications using React, Laravel, and modern tech.
+          Passionate about performance, clean code, and user experience.
+        </p>
         <div className="all-icons flex">
-          <div className="icon icon-x"></div>
-          <div className="icon icon-instagram"></div>
-          <div className="icon icon-github"></div>
-          <div className="icon icon-linkedin"></div>
+          <a href="https://x.com/..." target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faXTwitter} />
+          </a>
+          <a href="https://github.com/ziadehab74" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href="https://www.linkedin.com/in/ziad-ehab78" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </div>
       </div>
-      <div className='right-section animation border'>
+      <div className='right-section animation '>
         animation
       </div>
     </section>
