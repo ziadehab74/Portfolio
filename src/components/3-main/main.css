@@ -30,16 +30,6 @@ main section.left-section.flex button {
   transition: 0.3s;
 }
 
-.right-section.fade {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.right-section {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
 main section.left-section.flex button:hover {
   opacity: 1;
 }
@@ -76,6 +66,8 @@ main section.right-section.flex {
   transition: 0.3s;
   background-image: linear-gradient(rgba(255, 255, 255, 0.05),
       rgba(255, 255, 255, 0.05));
+  /* margin: 5px 20rem; */
+  padding: 0.5rem;
 }
 
 .light .card,
@@ -93,6 +85,7 @@ main section.right-section.flex {
 
 .card img {
   border-radius: 5px;
+  width: 100%;
 }
 
 .card .box {
