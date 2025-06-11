@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
       </div>
       <div className='right-section animation '>
-        animation
+        
       </div>
     </section>
   )

@@ -115,17 +115,23 @@ button:active {
     }
 }
 
-@media (max-width:500px) {
+@media (max-width: 600px) {
     .container {
-        width: 98%;
-        padding: 0 1.7rem;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .scroll2Top {
+        width: 2.2rem;
+        height: 2.2rem;
+        opacity: 0.6;
+        font-size: 1rem;
     }
 
     .divider {
-        border-bottom: 1px solid var(--border);
-        margin: 3rem 0;
-        width: calc(100% + var(--container-padding) + var(--container-padding));
-        margin-left: calc(var(--container-padding) * -1);
+        width: 100%;
+        margin-left: 0;
     }
 }
 

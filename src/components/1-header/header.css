@@ -68,14 +68,32 @@ header .fixed {
     }
 }
 
-@media(max-width:700px) {
+@media(max-width: 700px) {
+    /* Remove horizontal padding and margin from header */
+    header.flex {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Hide desktop nav */
     header.flex nav {
         display: none;
     }
+
+    /* Show mobile menu button */
     header button.menu {
         display: block;
     }
+
+    /* Make sure modal takes full width */
+    header .fixed ul.modal {
+        width: 100%;
+        padding: 1rem;
+        margin: 2rem 0 0 0;
+        border-radius: 0;
+    }
 }
+
 
 
 /* modal */
