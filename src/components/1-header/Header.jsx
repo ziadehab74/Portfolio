@@ -39,10 +39,10 @@ const Header = () => {
             <li>
               <button className="icon-cancel" onClick={() => setShowModal(false)} />
             </li>
-            <li><a href="#hero">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#main">Projects</a></li>
-          <li><a href="#contact-us">Contact</a></li>
+            <li><a onClick={() => setShowModal(false)}  href="#hero">About</a></li>
+            <li><a onClick={() => setShowModal(false)}  href="#skills">Skills</a></li>
+            <li><a onClick={() => setShowModal(false)}  href="#main">Projects</a></li>
+            <li><a onClick={() => setShowModal(false)}  href="#contact-us">Contact</a></li>
           </ul>
         </div>
       )}
