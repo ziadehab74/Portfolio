@@ -39,11 +39,10 @@ const Header = () => {
             <li>
               <button className="icon-cancel" onClick={() => setShowModal(false)} />
             </li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#articles">Articles</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#speaking">Speaking</a></li>
-            <li><a href="#uses">Uses</a></li>
+            <li><a href="#hero">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#main">Projects</a></li>
+          <li><a href="#contact-us">Contact</a></li>
           </ul>
         </div>
       )}
