@@ -10,7 +10,7 @@ export default function Contact() {
         Contact us for more information and Get notified when I publish
         something new.
       </p>
-      <div className="flex">
+      <div id="contact-us" className="flex">
         <form action="" >
           <div className='flex'>
           <label htmlFor="email">Email Address:</label>
